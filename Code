@@ -1,0 +1,18 @@
+import datetime
+
+
+print("Hello User\nEnter the following details")
+
+a = int(input("When is your Birth Year? "))
+b = int(input("When is your Birth Month? "))
+c = int(input("When is your Birth Date? "))
+
+print(f"WOW! You were born on {c}-{b}-{a}")
+birth_date = datetime.datetime(a, b, c)
+current_date = datetime.datetime.now()
+
+age = current_date - birth_date
+age_years = age.days // 365
+
+print(f"COOL! Then you must be {age_years} years old right now")
+
